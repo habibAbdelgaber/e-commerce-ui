@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+:root{
+    --color-primary-200: #F3EED9;
+    --color-secondary-400: #824936;
+    --color-neutral-900: #222C2A;
+    --color-white: #fff;
+    --color-blue-light: #5b5bf5;
+}
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.6;
+}
+
+.container{
+    /* display: none; */
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: var(--color-primary-200);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 .5rem var(--color-neutral-900);
+}
+
+.navbar .nav{
+    display: flex;
+}
+
+.navbar .nav li{
+    padding: 2rem 0;   
+}
+
+.navbar .nav li:hover{
+    background-color: rgba(0, 0, 0, .3);
+    transition: all .9s;
+    color: var(--color-white);
+}
+
+.navbar .nav li a, .icon{
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.icon{
+    font-family: 'Lobster Two', cursive;
+    letter-spacing: 1.3px;
+    font-size: 1.4rem;
+}
+
+.navbar .nav li a:hover{
+    color: #fff;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 0;
+    left: 90%;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+/* END OF NAVBAR */
+
+/* BANNER  */
+.header{
+    /* background-image: url(../images/hero.jpg); */
+    background: linear-gradient(to right bottom, rgba(0, 0, 150, 0.3), rgba(0, 0, 0, 0.3), rgba(55, 123, 212, .5)), url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.header-text{
+    flex-basis: 70%;
+}
+
+h4{
+    text-transform: uppercase;
+    font-family: 'Antonio', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+
+.paragraph{
+    font-size: 1.7rem;
+    font-family: 'Antonio', sans-serif;
+    text-align: justify;
+    max-width: 47rem;
+    /* color: #888; */
+}
+/* END OF BANNER */
+
+/* FEATURE  */
+.title{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1.5rem 0;
+    padding-bottom: 2rem;
+    font-family: 'Antonio', sans-serif;
+}
+.feature{
+    background-color: var(--color-primary-200);
+    padding: 1rem;
+}
+
+.feature-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    background-color:var(--color-white);
+    border-radius: .5rem;
+    flex-basis: 23%;
+    transition: transform .9s;
+}
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 .2rem var(--color-neutral-900);
+}
+.feature-img{
+    display: block;
+    width: 100%;
+    height: 28rem;
+}
+
+.property{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-to-cart{
+    background-color: var(--color-blue-light);
+    top: 85%;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: width 100s ease-in;
+}
+
+.add-to-cart:hover{
+    width: 70%;
+}
+/* END OF FEATURE  */
+
+/* ELECTRONICS  */
+.electronic-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.electro{
+    position: relative;
+    flex-basis: 40%;
+}
+.e3{
+    flex-basis: 10%;
+    border-left: var(--color-blue-light) .3rem solid;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.e-content{
+    width: 80%;
+    margin: 2rem auto;
+}
+.electro-img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.heading-text{
+    font-weight: 100;
+    padding: 1rem 0;
+    text-align: justify;
+}
+.electro-paragraph{
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.cta{
+    background: linear-gradient(to right, var(--color-neutral-900), var(--color-secondary-400), var(--color-blue-light));
+    position: absolute;
+    display: block;
+   top: 70%;
+   left: 10%;
+   padding: .7rem 3rem;
+   border-radius: .3rem;
+   text-transform: uppercase;
+   color: var(--color-white);
+   transition: width .9s ease-in;
+}
+
+.cta:hover{
+    width: 50%;
+    text-align: center;
+}
+/* END OF ELECTRONICS  */
+
+/* Model */
+.model{
+    display: none;
+    width: 30%;
+    background-color: var(--color-neutral-900);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 .2rem var(--color-white);
+    z-index: 100;
+}
+
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .close-form{
+    display: block;
+    position: absolute;
+    color: var(--color-primary-200);
+    font-size: 3rem;
+    top: -3rem;
+    left: 36rem;
+}
+
+.form .close-form:hover{
+    color: #ff0000;
+}
+
+.form-group:not(:nth-child(1)){
+    margin-top: .6rem;
+}
+.form-group:not(:nth-child(6)), label, .form-control, button{
+    display: block;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    width: 70%;
+    min-width: 100%;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group .form-control:focus, .form-btn:focus{
+    outline: none;
+}
+
+.form-group .form-control{
+    padding: 1rem 0;
+}
+
+.form-group .form-btn{
+    background-color: var(--color-blue-light);
+    padding: 1rem 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* width: 50%;
+    max-width: 100%; */
+}
+
+.form-group .remember-me{
+    color: var(--color-white);
+    font-size: 1.4rem;
+    padding-top: .5rem;
+}
+
+.form-group .social-icons{
+    text-align: center;
+    padding-top: 1rem;
+    cursor: pointer;
+    transition: transform 111s ease-in;
+}
+
+.fa-facebook{
+    color: var(--color-blue-light);
+}
+.fa-twitter{
+    color: #8484eb;
+}
+
+.fa-whatsapp{
+    color: #39ca1d;
+}
+
+[class*='fa-']:hover{
+    transform: scale(1.2);
+}
+/* .social-icons:hover{
+    transform: scale(1.2);
+} */
+/* END OF Model */
+
+/* OVERLAY */
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color:rgba(0, 0, 0, .5);
+    height: 100%;
+    z-index: 9;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+/* END OF OVERLAY */
+
+/* Footer */
+.copyright{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* END OF FOOTER */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all .9s;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .icon, .link{
+        font-size: 1rem;
+    }
+
+    .logo{
+        padding: 1rem 0;
+    }
+
+    .items{
+        display: none;
+        flex-direction: column;
+    }
+
+    .items .nav{
+        width: 100%;
+        flex-direction: column;
+       
+    }
+
+    .navbar .nav li{
+        padding: 1rem 0;   
+    }
+
+    .toggle-button{
+        display: block;
+        padding-top: .4rem;
+    }
+
+    .items.active{
+        display: flex;
+        
+    }
+
+    .text, .paragraph{
+        font-size: 1rem;
+    }
+
+    .feature-content{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .box{
+        margin-top: .5rem;
+    }
+    .electronic-content{
+        flex-direction: column;
+    }
+
+    .e3{
+        display: none;
+    }
+}
